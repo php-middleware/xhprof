@@ -9,7 +9,10 @@ interface StoragePolicyInterface
 {
     /**
      * @param ServerRequestInterface $request
+     * @param ResponseInterface $response
      * @param array $resultData
+     *
+     * @return bool
      */
     public function canStore(ServerRequestInterface $request, ResponseInterface $response, array $resultData);
 }
